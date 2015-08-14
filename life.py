@@ -1,5 +1,5 @@
 #!/bin/python
-#################################
+###################################
 ##
 ## Conway's Game of Life in Python3
 ## author: Shane O'Neill
