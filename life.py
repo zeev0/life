@@ -65,6 +65,11 @@ def gen_random(board,rate):
 
 def update(board):
     "loop through the board, updating each cell, return new board"
+    # next_gen = [[' ' for x in range(len(board))] \
+    #                  for x in range(len(board[0]))]
+    # perhaps implement true "instantaneosly update by using the
+    # above list and filling it in while looping through last_gen
+    # board
     for row in range(len(board)):
         for col in range(len(board[row])):
             n = neighbors(board,row,col)
@@ -92,7 +97,6 @@ def isalive(board,row,col):
 def neighbors(board, row, col):
     "return count of neighbors for a given cell"
     count = 0
-    max_i = len(board[0])
     if isalive(board,row-1,col-1): count += 1
     if isalive(board,row-1,col  ): count += 1
     if isalive(board,row-1,col+1): count += 1
