@@ -44,7 +44,6 @@ def main(argv):
 def run(size,rate):
     "run the sim with the given height/width"
     width, height = size
-    board = [[' ' for x in range(width)] for x in range(height)]
     board = gen_random(board, rate)
     display(board)
     # start the update-display loop
@@ -56,6 +55,7 @@ def run(size,rate):
         
 def gen_random(board,rate):
     "@ means the cell is filled"
+    board = [[' ' for x in range(width)] for x in range(height)]
     for row in range(len(board)):
         for col in range(len(board[row])):
             t = random.randint(1,100)
