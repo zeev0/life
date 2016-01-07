@@ -1,7 +1,6 @@
 #!/bin/python
 #
 # Conway's Game of Life in Python3
-# Copyright (C) 2015  Shane O'Neill
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
